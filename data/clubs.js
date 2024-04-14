@@ -5,10 +5,10 @@ const clubs = [
       details: {
          league: {
             name: 'La Liga',
-            url: '../assets/images/leagues/la-liga'
+            url: 'assets/images/leagues/la-liga'
          }, nation: {
             name: 'Spain',
-            url: '../assets/images/country/spain'
+            url: 'assets/images/country/spain'
          }
       }
    }, {
