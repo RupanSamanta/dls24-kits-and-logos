@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+   <meta name="description" content="A collection of all DLS 24 Kits and Logos">
+   <meta name="author" content="Rupan Samanta">
+   <meta name="keywords" content="DLS 24, Kits, Logo">
+   <meta name="theme-color" content="#37003C">
+   <title>DLS Kits and Logos</title>
+   <link rel="stylesheet" href="main.css">
+   <link rel="stylesheet" href="style.css">
+   <script src="jquery-3.7.1.min.js"></script>
+   <script src="https://kit.fontawesome.com/82872eeccd.js" crossorigin="anonymous"></script>
+   <script src="data/home.js"></script>
+</head>
+<body>
+   <header></header>
+   <main>
+      <section id="intro">
+         <span id="first-word">Welcome</span> to the ultimate destination for Dream League Soccer enthusiasts your premier source for football club kits and logos tailored specifically for DLS 24. Dive into our comprehensive collection of meticulously crafted kits and logos, meticulously designed to enhance your gaming experience to new heights. Whether you're striving for glory in career mode, dominating online matches, or simply expressing your support for your favorite club, our curated selection offers everything you need to make your virtual team stand out on the digital pitch.
+      </section>
+      <hr>
+      <section id="popular-clubs">
+         <div class="heading">Popular Clubs</div>
+         <div class="container"></div>
+         <div class="view-all">
+            <div>
+               <span>View All Clubs</span>
+               <i class="fa-solid fa-arrow-right-long"></i>   
+            </div>         
+         </div>
+      </section>
+      <hr>
+        <section id="national-teams">
+         <div class="heading">National Teams</div>
+         <div class="container"></div>
+         <div class="view-all">
+            <div>
+               <span>View All Countries</span>
+               <i class="fa-solid fa-arrow-right-long"></i>   
+            </div>         
+         </div>
+      </section>
+   </main>
+   <footer></footer>
+</body>
+<script src="script.js"></script>
+<script>
+   document.body.onload = function () {
+      headerFooter();
+      appendBox({
+         list: [popularClubs, nationalTeams],
+         elems: ['popular-clubs', 'national-teams']
+      });
+   }
+</script>
+</html>

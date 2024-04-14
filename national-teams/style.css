@@ -1,0 +1,85 @@
+main #title {
+   background: linear-gradient(to bottom right, var(--blue), var(--violet));
+   padding-top: 30px;
+}
+#title .heading {
+   color: #fff;
+   font-family: 'Bold';
+   margin-bottom: 15px;
+}
+.search-box {
+   width: 340px;
+   background: #fff;
+   padding: 5px 10px;
+   border-radius: 5px;
+   border: solid 1px transparent;
+}
+.input-search {
+   width: 280px;
+   appearance: none;
+   font-family: 'Light';
+   font-size: var(--fontsize);
+   color: darkgrey;
+   border: none;
+   outline: none;
+   padding: 5px;
+}
+.input-search::placeholder {
+   color: darkgrey;
+}
+.input-search:focus, .input-search:focus::placeholder
+ {
+   color: var(--plumcolor);
+}
+.search-box:hover {
+   border-color: var(--blue);
+}
+.search-button {
+   color: var(--plumcolor);
+   padding: 5px;
+   font-size: var(--fontsize);
+   border-left: solid 2px lightgrey;
+   text-align: center;
+   font-size: 18px;
+}
+.search-button i {
+   transform: translate(4px, 2px);
+}
+.search-button:hover {
+   color: var(--violet);
+}
+
+main .container {
+   gap: 0;
+}
+main .container > div {
+   background: transparent;
+}
+main .container > div::before {
+   width: 0;
+   transform: none;
+}
+section:nth-of-type(even) .container > div::before {
+   background: linear-gradient(to right, var(--green), var(--yellow), transparent 40%);
+}
+main .container > div:hover::before {
+   width: 100%;
+   transform: none;
+   transition: all 0.25s ease-in;
+}
+.crest {
+   width: 45px;
+   height: 45px;
+}
+#national-teams-list .crest {
+   background-size: contain;
+}
+
+.name-details {
+   font-size: 13px;
+}
+
+#club-list .container {
+   padding: 0;
+   padding-bottom: var(--padding);
+}

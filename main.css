@@ -1,0 +1,213 @@
+@font-face  {
+   font-family: 'Renogare';
+   src: url('assets/fonts/Renogare Regular.otf');
+}
+@font-face  {
+    font-family: 'Light';
+    src: url('assets/fonts/Radikal Light.otf');
+}
+@font-face  {
+    font-family: 'Medium';
+    src: url('assets/fonts/Radikal Medium.otf');
+}
+@font-face  {
+    font-family: 'Bold';
+    src: url('assets/fonts/Radikal Bold.otf');
+}
+@font-face  {
+    font-family: 'Black';
+    src: url('assets/fonts/Radikal Black.otf');
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: 'Medium', arial;
+   transition: all 0.25s ease;   
+}
+
+:root {
+   --padding: 20px;
+   --fontsize: 16px;
+   --plumcolor: #37003C;
+   --blue: #07EDFF;
+   --violet: #8552FF;
+   --pink: #FF2882;
+   --white: #e1e2e5;
+   --yellow: #EAFE00;
+   --green: #01FC9C;
+}
+
+::selection {
+   background: var(--pink);
+   color: var(--white);
+}
+
+header, footer {
+   height: 65px;
+   padding: var(--padding);
+   background: var(--plumcolor);
+}
+footer {
+   height: auto;
+   padding: 30px var(--padding);
+}
+a, a:link {
+   color: var(--white);
+   text-decoration: none;
+}
+
+
+hr {
+   width: 100%;
+   display: block;
+   background: linear-gradient(to right, var(--blue), var(--violet));
+   padding: 0;
+   height: 5px;
+   border: none;
+   margin: 0;
+}
+
+.logo {
+   width: calc(480/113*25px);
+   height: 25px;
+   background: url("assets/images/logo/dls-logo.png") no-repeat;
+   background-size: cover;
+   background-position: center center;
+}
+
+main section {
+   padding: 40px var(--padding);
+}
+main .heading {
+   font-family: 'Bold';
+   font-size: 25px;
+   color: var(--plumcolor);
+}
+main .container {
+   padding: var(--padding) 0;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 15px;
+}
+main .container > div {
+   width: 385px;
+   background: linear-gradient(to top right, transparent, #fff 10% 90%, transparent);
+   padding: 5px;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   position: relative;
+   animation: appear 1s ease;
+}
+@keyframes appear {
+   0% {
+      opacity: 0;
+      transform: translateY(40%);
+   }
+   100% {
+      opacity: 1;
+      transform: none;
+   }
+}
+main .container > div::before {
+   content: "";
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   background: linear-gradient(to top right, var(--blue), transparent, var(--pink));
+   margin-left: -10px;
+   transform: skewX(-2deg) skewY(-2deg) scale(0);
+   z-index: -1;
+   transition: all 0.25s ease;
+}
+section:nth-of-type(even) .container > div::before {
+   background: linear-gradient(to top right, var(--green), transparent, var(--yellow));
+}
+main .container > div:hover::before {
+   transform: skewX(-2deg) skewY(-2deg) scale(1);
+   transition: all 0.25s ease;
+}
+main .container .no-result {
+   width: 385px;
+   background: var(--plumcolor);
+   font-size: 13px;
+   padding: 15px 0 15px 20px;
+   border-radius: 3px;
+   color: var(--white);
+   animation: none;
+   display: none;
+}
+
+.crest {
+   width: 50px;
+   height: 50px;
+   background: var(--url) no-repeat;
+   background-position: center center;
+   background-size: auto 95%;
+   margin-right: 20px;
+   position: relative;
+   filter: drop-shadow(0 0 1px rgba(0,0,0,0.25));
+}
+#national-teams .crest {
+   background-size: contain;
+}
+.name-details {
+   width: 70%;
+   font-size: var(--fontsize);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   color: var(--plumcolor);
+}
+.name-details .name {
+   font-family: 'Bold';
+}
+.other-details, .other-details div {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   font-size: 12px;
+   font-family: 'Light';
+}
+.other-details {
+   margin: 3px 0 -3px 0;
+}
+.other-details > div {
+   margin-right: 15px;
+}
+.other-details img {
+   width: 14px;
+   height: auto;
+   margin-right: 5px;
+   background: transparent;
+   filter: drop-shadow(0 0 1px rgba(0,0,0,0.25));
+}
+
+footer .social-media {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 25px;
+   font-size: 22px;
+   margin-top: 30px;
+}
+footer a {
+   width: fit-content;
+   font-family: 'Light';
+}
+footer a:hover {
+   color: var(--pink);
+}
+.page-links {
+   margin: 30px auto 20px auto;
+   font-weight: 100;
+   font-size: 14px;
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}

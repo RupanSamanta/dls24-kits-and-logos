@@ -1,0 +1,41 @@
+main #intro {
+   font-size: 16px;
+   font-family: 'Light';
+   color: var(--white);
+   text-align: justify;
+   text-shadow: 0 0 5px rgba(0,0,0,0.35);
+   background-image: url("assets/images/background/23.png");
+   background-position: center center;
+   background-color: rgba(0,0,0,0.7);
+   background-size: cover;
+   background-attachment: fixed;
+}
+main #intro #first-word {
+   font-size: 28px;
+   font-family: 'Medium';
+   display: inline-block;
+   background: linear-gradient(to right, var(--blue), var(--green));
+   background-clip: text;
+   color: transparent;
+   text-shadow: none;
+}
+.view-all {
+   display: flex;
+   justify-content: flex-end;
+}
+.view-all div {
+   width: fit-content;
+   height: auto;
+   font-size: 12px;
+   padding: 10px;
+   border-radius: 7px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.view-all span {
+   margin-right: 7px;
+}
+.view-all div:hover {
+   background: var(--white);
+}
