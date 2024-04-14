@@ -52,8 +52,8 @@ function headerFooter() {
    $('footer').append(`
       <div class="page-links">
          <a href="">Home</a>
-         <a href="clubs/index.html">Clubs</a>
-         <a href="national-teams/index.html">National Teams</a>
+         <a href="clubs/">Clubs</a>
+         <a href="national-teams/">National Teams</a>
       </div>
       <div class="social-media">
          <a href="https://github.com/RupanSamanta">
