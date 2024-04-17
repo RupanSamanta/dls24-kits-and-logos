@@ -1,3 +1,5 @@
+const baseUrl = 'https://rupansamanta.github.io/dls24-kits-and-logos/';
+const imgUrl = baseUrl + 'assets/images/';
 function appendBox(inp) {
    inp.elems.forEach((value, index)=> {
       const parent = $(`#${value} .container`);
@@ -13,7 +15,7 @@ function createBox(data) {
    
    const crest = newElem('div');
    crest.className = 'crest';
-   crest.style.setProperty('--url', `url('../assets/images/${data.url}.png')`);
+   crest.style.setProperty('--url', `url('${imgUrl+data.url}.png')`);
    parentDiv.appendChild(crest);
    
    const nameDetails = newElem('div');
@@ -30,8 +32,8 @@ function createBox(data) {
       let obj = data.details[prop];
       let div = newElem('div');
       let img = newElem('img');
-      img.setAttribute('src', obj.url+'.png');
-      img.setAttribute('alt', obj.name+'.png');
+      img.setAttribute('src', imgUrl+obj.url+'.png');
+      img.setAttribute('alt', obj.name);
       div.appendChild(img);
       let span = newElem('span');
       span.innerText = obj.name;
@@ -51,9 +53,9 @@ function headerFooter() {
    `);
    $('footer').append(`
       <div class="page-links">
-         <a href="">Home</a>
-         <a href="clubs/">Clubs</a>
-         <a href="national-teams/">National Teams</a>
+         <a href="${baseUrl}">Home</a>
+         <a href="${baseUrl}clubs/">Clubs</a>
+         <a href="${baseUrl}national-teams/">National Teams</a>
       </div>
       <div class="social-media">
          <a href="https://github.com/RupanSamanta">

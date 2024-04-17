@@ -5,11 +5,11 @@ const popularClubs = [
       details: {
          league: {
             name: 'La Liga',
-            url: 'assets/images/leagues/la-liga'
+            url: 'leagues/la-liga'
          },
          nation: {
             name: 'Spain',
-            url: 'assets/images/country/spain'
+            url: 'country/spain'
          }
       }
    },
@@ -19,11 +19,11 @@ const popularClubs = [
       details: {
          league: {
             name: 'Premier League',
-            url: 'assets/images/leagues/premier-league'
+            url: 'leagues/premier-league'
          },
          nation: {
             name: 'England',
-            url: 'assets/images/country/england'
+            url: 'country/england'
          }
       }
    }, {
@@ -32,11 +32,11 @@ const popularClubs = [
       details: {
          league: {
             name: 'Premier League',
-            url: 'assets/images/leagues/premier-league'
+            url: 'leagues/premier-league'
          },
          nation: {
             name: 'England',
-            url: 'assets/images/country/england'
+            url: 'country/england'
          }
       }
    },
@@ -46,11 +46,11 @@ const popularClubs = [
       details: {
          league: {
             name: 'Ligue 1',
-            url: 'assets/images/leagues/ligue-1'
+            url: 'leagues/ligue-1'
          },
          nation: {
             name: 'France',
-            url: 'assets/images/country/france'
+            url: 'country/france'
          }
       }
    },
@@ -60,11 +60,11 @@ const popularClubs = [
       details: {
          league: {
             name: 'Bundesliga',
-            url: 'assets/images/leagues/bundesliga'
+            url: 'leagues/bundesliga'
          },
          nation: {
             name: 'Germany',
-            url: 'assets/images/country/germany'
+            url: 'country/germany'
          }
       }
    },
@@ -74,11 +74,11 @@ const popularClubs = [
       details: {
          league: {
             name: 'Indian Super League',
-            url: 'assets/images/leagues/indian-super-league'
+            url: 'leagues/indian-super-league'
          },
          nation: {
             name: 'India',
-            url: 'assets/images/country/india'
+            url: 'country/india'
          }
       }
    }
@@ -91,11 +91,11 @@ const nationalTeams = [
       details: {
          governing_body: {
             name: 'AFA',
-            url: 'assets/images/country-crest/argentina'
+            url: 'country-crest/argentina'
          },
          confederation: {
             name: 'CONMEBOL',
-            url: 'assets/images/confederation/conmebol',
+            url: 'confederation/conmebol',
          }
       }
    }, {
@@ -104,11 +104,11 @@ const nationalTeams = [
       details: {
          governing_body: {
             name: 'FFF',
-            url: 'assets/images/country-crest/france'
+            url: 'country-crest/france'
          },
          confederation: {
             name: 'UEFA',
-            url: 'assets/images/confederation/uefa'
+            url: 'confederation/uefa'
          }
       }
    }, {
@@ -117,11 +117,11 @@ const nationalTeams = [
       details: {
          governing_body: {
             name: 'FPF',
-            url: 'assets/images/country-crest/portugal'
+            url: 'country-crest/portugal'
          },
          confederation: {
             name: 'UEFA',
-            url: 'assets/images/confederation/uefa'
+            url: 'confederation/uefa'
          }
       }
    }

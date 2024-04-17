@@ -5,11 +5,11 @@ const nationalTeams = [
       details: {
          governing_body: {
             name: 'AFA',
-            url: 'assets/images/country-crest/argentina'
+            url: 'country-crest/argentina'
          },
          confederation: {
             name: 'CONMEBOL',
-            url: 'assets/images/confederation/conmebol',
+            url: 'confederation/conmebol',
          }
       }
    }, {
@@ -18,11 +18,11 @@ const nationalTeams = [
       details: {
          governing_body: {
             name: 'FFF',
-            url: 'assets/images/country-crest/france'
+            url: 'country-crest/france'
          },
          confederation: {
             name: 'UEFA',
-            url: 'assets/images/confederation/uefa'
+            url: 'confederation/uefa'
          }
       }
    }, {
@@ -31,11 +31,11 @@ const nationalTeams = [
       details: {
          governing_body: {
             name: 'FPF',
-            url: 'assets/images/country-crest/portugal'
+            url: 'country-crest/portugal'
          },
          confederation: {
             name: 'UEFA',
-            url: 'assets/images/confederation/uefa'
+            url: 'confederation/uefa'
          }
       }
    }

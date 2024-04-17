@@ -5,10 +5,10 @@ const clubs = [
       details: {
          league: {
             name: 'La Liga',
-            url: 'assets/images/leagues/la-liga'
+            url: 'leagues/la-liga'
          }, nation: {
             name: 'Spain',
-            url: 'assets/images/country/spain'
+            url: 'country/spain'
          }
       }
    }, {
@@ -17,10 +17,10 @@ const clubs = [
       details: {
          league: {
             name: 'Premier League',
-            url: 'assets/images/leagues/premier-league'
+            url: 'leagues/premier-league'
          }, nation: {
             name: 'England',
-            url: 'assets/images/country/england'
+            url: 'country/england'
          }
       }
    }, {
@@ -29,11 +29,11 @@ const clubs = [
       details: {
          league: {
             name: 'Premier League',
-            url: 'assets/images/leagues/premier-league'
+            url: 'leagues/premier-league'
          },
          nation: {
             name: 'England',
-            url: 'assets/images/country/england'
+            url: 'country/england'
          }
       }
    },
@@ -43,11 +43,11 @@ const clubs = [
       details: {
          league: {
             name: 'Ligue 1',
-            url: 'assets/images/leagues/ligue-1'
+            url: 'leagues/ligue-1'
          },
          nation: {
             name: 'France',
-            url: 'assets/images/country/france'
+            url: 'country/france'
          }
       }
    },
@@ -57,11 +57,11 @@ const clubs = [
       details: {
          league: {
             name: 'Bundesliga',
-            url: 'assets/images/leagues/bundesliga'
+            url: 'leagues/bundesliga'
          },
          nation: {
             name: 'Germany',
-            url: 'assets/images/country/germany'
+            url: 'country/germany'
          }
       }
    },
@@ -71,11 +71,11 @@ const clubs = [
       details: {
          league: {
             name: 'Indian Super League',
-            url: 'assets/images/leagues/indian-super-league'
+            url: 'leagues/indian-super-league'
          },
          nation: {
             name: 'India',
-            url: 'assets/images/country/india'
+            url: 'country/india'
          }
       }
    }
