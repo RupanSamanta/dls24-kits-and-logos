@@ -90,6 +90,7 @@ main .heading {
    color: var(--plumcolor);
 }
 main .container {
+   min-height: 86px;
    padding: var(--padding) 0;
    display: flex;
    justify-content: flex-start;
