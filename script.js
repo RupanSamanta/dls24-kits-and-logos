@@ -1,7 +1,7 @@
 const baseUrl = 'https://rupansamanta.github.io/dls24-kits-and-logos/';
 const imgUrl = baseUrl + 'assets/images/';
 function appendBox(inp) {
-   inp.elems.forEach((value, index)=> {
+   inp.elems.forEach((value, index) => {
       const parent = $(`#${value} .container`);
       for (let obj of inp.list[index]) {
          parent.append(createBox(obj));
@@ -12,27 +12,27 @@ function appendBox(inp) {
 function createBox(data) {
    const parentDiv = newElem('div');
    parentDiv.className = 'crest-name';
-   
+
    const crest = newElem('div');
    crest.className = 'crest';
-   crest.style.setProperty('--url', `url('${imgUrl+data.url}.png')`);
+   crest.style.setProperty('--url', `url('${imgUrl + data.url}.png')`);
    parentDiv.appendChild(crest);
-   
+
    const nameDetails = newElem('div');
    nameDetails.className = 'name-details';
-   
+
    const name = newElem('div');
    name.className = 'name';
    name.innerText = data.name;
    nameDetails.appendChild(name);
-   
+
    const otherDetails = newElem('div');
    otherDetails.className = 'other-details';
    for (let prop in data.details) {
       let obj = data.details[prop];
       let div = newElem('div');
       let img = newElem('img');
-      img.setAttribute('src', imgUrl+obj.url+'.png');
+      img.setAttribute('src', imgUrl + obj.url + '.png');
       img.setAttribute('alt', obj.name);
       div.appendChild(img);
       let span = newElem('span');
@@ -47,10 +47,11 @@ function createBox(data) {
 
 function headerFooter() {
    $('header, footer').append(`
-      <div class="logo-name">
-         <div class="logo"></div>
-      </div>
-   `);
+      <a href="${baseUrl}">
+         <div class="logo-name">
+            <div class="logo"></div>
+         </div>
+      </a>`);
    $('footer').append(`
       <div class="page-links">
          <a href="${baseUrl}">Home</a>
