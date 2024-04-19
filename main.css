@@ -48,9 +48,13 @@ header, footer {
    height: 65px;
    padding: var(--padding);
    background: var(--plumcolor);
+   display: flex;
+   justify-content: flex-start;
 }
 footer {
    height: auto;
+   align-items: flex-start;
+   flex-direction: column;
    padding: 30px var(--padding);
 }
 a, a:link {
@@ -193,10 +197,10 @@ footer .social-media {
    justify-content: flex-start;
    align-items: center;
    gap: 25px;
-   font-size: 22px;
+   font-size: 20px;
    margin-top: 30px;
 }
-footer a {
+header a, footer a {
    width: fit-content;
    font-family: 'Light';
 }
@@ -204,10 +208,10 @@ footer a:hover {
    color: var(--pink);
 }
 .page-links {
-   margin: 30px auto 20px auto;
+   margin-top: 30px;
    font-weight: 100;
    font-size: 14px;
    display: flex;
    flex-direction: column;
-   gap: 15px;
+   gap: 20px;
 }

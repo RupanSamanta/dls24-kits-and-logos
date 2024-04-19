@@ -49,9 +49,6 @@ main #title {
    color: var(--violet);
 }
 
-main .container {
-   gap: 0;
-}
 main .container > div {
    background: transparent;
 }
